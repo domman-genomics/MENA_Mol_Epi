@@ -1,6 +1,6 @@
 # Download the simulated oubtreak data
 
-Please download the line list and fasta files in the `data` folder for use in the following steps.
+Please download the line list and fasta files in the `data` folder for use in the following steps. The goal is to use online tools like Nextclade and Microreact to identify and analyze this outbreak data.
 
 # Upload FASTA Files to Nextclade.org
 
