@@ -1,3 +1,7 @@
+# Download the simulated oubtreak data
+
+Please download the line list and fasta files in the `data` folder for use in the following steps.
+
 # Upload FASTA Files to Nextclade.org
 
 This tutorial will guide you through the steps to upload your FASTA files for outbreak analysis on [Nextclade.org](https://clades.nextstrain.org/).
@@ -101,3 +105,63 @@ Go to [Microreact.org](https://microreact.org/) in your web browser.
 - Refer to the [Microreact documentation](https://docs.microreact.org/) for additional customization options and troubleshooting tips.
 
 That's it! You've successfully combined your tree and metadata from Nextclade and uploaded them to Microreact for visualization.
+
+# Modifying Clade, Location, Latitude, and Longitude Data
+
+This guide will help you add clade information and update location data to local cities, along with changing the corresponding latitude and longitude for each outbreak in your dataset. To make things interesting, we encourage you to edit the location data using cities/towns in your country. 
+
+## Step 1: Open the CSV File
+
+1. Locate your dataset CSV file on your computer.
+2. Open the CSV file using a text editor or a spreadsheet application (e.g., Microsoft Excel, Google Sheets).
+
+## Step 2: Add or Modify Clade Information
+
+1. **Identify the Clade Column**: Locate the column that contains the clade information. It is typically labeled as `clade`.
+2. **Add/Modify Clade Data**: Enter or update the clade information for each row as required. Ensure the clade names are consistent with your analysis requirements.
+
+## Step 3: Modify Location Data to Local Cities
+
+1. **Identify the Location Column**: Locate the column that contains the location data. It is typically labeled as `location`.
+2. **Update Location Names**: Change the location names to your local cities or any preferred locations. Make sure the names are consistent throughout the dataset.
+
+## Step 4: Update Latitude and Longitude Data
+
+1. **Identify Latitude and Longitude Columns**: Locate the columns that contain the latitude and longitude data. These are typically labeled as `lat` and `lon`.
+2. **Find Coordinates for New Locations**:
+   - Use a service like [Google Maps](https://maps.google.com/) to find the latitude and longitude for the new locations.
+   - Enter the new coordinates in the respective columns for each updated location.
+
+## Example Changes
+
+### Before:
+
+| seqName   | clade  | location | lat      | lon       |
+|-----------|--------|----------|----------|-----------|
+| sample_1  | DENV3  | A        |   |   |
+| sample_2  | DENV3  | B        |   |  |
+| sample_3  | DENV2  | C        |   |  |
+| sample_4  | DENV2  | D        |   |   |
+
+### After:
+
+| seqName   | clade  | location   | lat      | lon       |
+|-----------|--------|------------|----------|-----------|
+| sample_1  | DENV3  | New York   | 40.7128  | -74.0060  |
+| sample_2  | DENV3  | Los Angeles| 34.0522  | -118.2437 |
+| sample_3  | DENV2  | Phoenix    | 33.4484  | -112.0740 |
+| sample_4  | DENV2  | Chicago    | 41.8781  | -87.6298  |
+
+## Step 5: Save the Updated CSV File
+
+1. After making all the necessary changes, save the updated CSV file.
+   - If using a text editor, simply save the file.
+   - If using a spreadsheet application, make sure to export or save the file in CSV format.
+
+## Additional Tips
+
+- **Backup Your Data**: Before making changes, create a backup of your original CSV file to prevent data loss.
+- **Consistency**: Ensure that all the changes are consistent and correctly formatted.
+- **Validation**: Validate the updated CSV file by loading it into your analysis tool to ensure there are no errors.
+
+By following these steps, you can customize the clade, location, and geographical data in your dataset according to your team's requirements.
